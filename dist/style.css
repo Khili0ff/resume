@@ -1,4 +1,32 @@
 /*!*****************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./src/index.css ***!
   \*****************************************************************/
+/* fonts */
 
+@font-face {
+  font-family: VictorMono-Light;
+  src: url(75f9e4f5b2954965c452.ttf);
+  font-weight: lighter;
+}
+
+@font-face {
+  font-family: VictorMono-Regular;
+  src: url(6e890dddb898bf189466.ttf);
+  font-weight: regular;
+}
+
+@font-face {
+  font-family: VictorMono-Bold;
+  src: url(d753345ce95c3a8e6f62.ttf);
+  font-weight: bold;
+}
+
+/* root style */
+
+:root {
+  --color-main-blue: #0084ce;
+  --color-secondary-gray: #747474;
+  --font-victor-light: VictorMono-Light;
+  --font-victor-regular: VictorMono-Regular;
+  --font-victor-bold: VictorMono-Bold;
+}
