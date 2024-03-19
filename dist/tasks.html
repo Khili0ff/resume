@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <!-- Basic page needs -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Resume frontend developer">
+  <title>Резюме - Трекер задач</title>
+
+  <!-- Site favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="e473fdac636d48acba1c.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="4ffeb1bfbe5df6b8619c.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="e5ae6c077c9a95ec6253.png">
+<script defer src="tasks.js"></script><link href="tasks.css" rel="stylesheet"></head>
+<body>
+  <div class="row">
+    <navigation class="navigation">
+      <div class="navigation__appellation">
+        <span class="navigation__appellation__title">Трекер задач</span>
+        <a class="navigation__appellation__service" href="index.html">Все сервисы</a>
+      </div>
+      <div class="navigation__menu">
+        <span class="navigation__menu__task">Задачи</span>
+        <span class="navigation__menu__board">Доски задач</span>
+        <button class="button" id="create__task" type="button">Создать задачу</button>
+      </div>
+      <div class="navigation__contacts">
+
+      </div>
+    </navigation>
+    <main class="main">
+      <div class="main__navigation">
+
+      </div>
+      <div class="main__filter">
+        <h1 class="main__filter__title" title="Новая задача">Новая задача</h1>
+        <div class="main__filter__instruments">
+          <input type="search" placeholder="Поиск по задачам" id="search__task">
+          <span class="main__filter__instruments__sort">Сортировка</span>
+          <span class="main__filter__instruments__filters">Фильтры</span>
+        </div>
+      </div>
+      <div class="main__tasks">
+        <div class="main__tasks__open">
+          <div class="main__tasks__menu">
+            <span>Открыт</span>
+            <div class="main__tasks__task__instruments">&#8285</div>
+          </div>
+          <div class="main__tasks__all"></div>
+        </div>
+        <div class="main__tasks__work">
+          <div class="main__tasks__menu">
+            <span>В работе</span>
+            <div class="main__tasks__task__instruments">&#8285</div>
+          </div>
+          <div class="main__tasks__all"></div>
+        </div>
+        <div class="main__tasks__close">
+          <div class="main__tasks__menu">
+            <span>Закрыт</span>
+            <div class="main__tasks__task__instruments">&#8285</div>
+          </div>
+          <div class="main__tasks__all"></div>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
+

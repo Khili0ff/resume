@@ -374,6 +374,10 @@ template {
 
 /* root style */
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   /* colors */
   --color-main-blue: #0084ce;
@@ -385,29 +389,6 @@ template {
   /* sizes */
   --size-width-desktop: 1280px;
 }
-/*!*********************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/style.css ***!
-  \*********************************************************************/
-/* main container */
-body {
-  display: flex;
-  background-color: #efefef;  
-
-  font-family: var(--font-victor-regular);
-  font-size: 12px;
-}
-
-.row {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: auto;
-
-  width: 1280px;
-  height: 100%;
-
-  padding: 0 20px;
-}
 
 .title {
   font-family: var(--font-victor-bold);
@@ -418,124 +399,7 @@ body {
   margin: 20px 0;
 }
 
-/* practice */
-.practic {
-  width: 100%;
-  height: max-content;
-
-  display: grid;
-  grid-template-columns: 1fr 150px 1fr;
-}
-
-.practic-branch {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 15px;
-  margin: 0 auto;
-}
-
-.practic-branch-line {
-  position: absolute;
-  width: 2px;
-  height: 95%;
-  background-color: var(--color-main-blue);
-}
-
-.practic-branch-line-point {
-  width: 16px;
-  height: 16px;
-  border-radius: 100%;
-  background-color: var(--color-main-blue);
-}
-
-.practic-branch-line-point:nth-child(2n) {
-  margin-bottom: 30px;
-}
-
-.practic-branch-line-point:nth-child(2n+1) {
-  margin-bottom: 190px;
-}
-
-.practic-left, 
-.practic-right {
-  display: flex;
-  flex-direction: column;
-  gap: 50px;
-}
-
-.practic-left-card, 
-.practic-right-card {
-  max-width: 100%;
-  min-height: 200px;
-  background-color: #fff;
-}
-
-.practic-left-card:hover, 
-.practic-right-card:hover {
-  transform: scale(0.99);
-  transition: all 100ms;
-}
-
-.practic-left-card {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  margin-top: 5px;
-}
-
-.practic-right-card:first-child {
-  margin-top: 55px;
-}
-
-.card-title {
-  display: flex;
-
-  position: relative;
-  height: 30%;
-
-  background-color: var(--color-main-blue);
-}
-
-.card-title-text {
-  margin: auto 15px;
-
-  font-size: 1.2rem;
-  color: #fff;
-}
-
-.card-description {
-  display: flex;
-  
-  padding: 15px;
-}
-
-.practic-left-card .card-title::after {
-  content: '';
-  position: absolute;
-  right: -25px;
-  width: 26px;
-  height: 25px;
-  clip-path: polygon(0 0, 0 100%, 100% 0);
-  background-color: var(--color-main-blue);
-}
-
-.practic-right-card .card-title::after {
-  content: '';
-  position: absolute;
-  left: -25px;
-  width: 26px;
-  height: 25px;
-  clip-path: polygon(0 0, 100% 100%, 100% 0);
-  background-color: var(--color-main-blue);
-}
-
-.card-description {
-  height: 70%;
-}
-
-.button-card {
+.button {
   width: 100%;
   padding: 10px 10px;
   border-radius: 0px;
@@ -548,12 +412,288 @@ body {
   color: #fff;
 }
 
-.button-card:hover {
+.button:hover {
   filter: brightness(95%)
 }
+/*!*********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/tasks.css ***!
+  \*********************************************************************/
+html, body {
+  font-family: var(--font-victor-regular);
+  font-size: 13px;
+  background-color: #efefef;  
+}
 
+.row {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  width: 100%;
+  height: 100%;
+}
 
-/*!*****************************************************************!*\
-  !*** css ./node_modules/css-loader/dist/cjs.js!./src/index.css ***!
-  \*****************************************************************/
+.navigation {
+  display: grid;
+  grid-template-rows: 130px 1fr 100px;
+  padding: 20px;
+
+  border-right: 1px solid var(--color-main-blue);
+}
+
+.navigation__appellation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.navigation__appellation::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  width: calc(100% + 40px);
+  height: 1px;
+  background-color: var(--color-main-blue);
+}
+
+.navigation__appellation__title {
+  font-family: var(--font-victor-bold);
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  color: var(--color-main-blue);
+}
+
+.navigation__appellation__service {
+  color: black;
+  text-decoration: none;
+}
+
+.navigation__menu {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  padding: 20px 0;
+}
+
+.navigation__menu::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: -20px;
+  width: calc(100% + 40px);
+  height: 1px;
+  background-color: var(--color-main-blue);
+}
+
+.navigation__menu__task,
+.navigation__menu__board,
+.main__filter__instruments__sort,
+.main__filter__instruments__filters {
+  cursor: pointer;
+}
+
+.navigation__contacts {
+  position: relative;
+}
+
+.main {
+  position: relative;
+  display: grid;
+  grid-template-rows: 50px 100px 1fr;
+}
+
+.main__navigation,
+.main__filter {
+  border-bottom: 1px solid var(--color-main-blue);
+}
+
+.main__filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 20px;
+}
+
+.main__filter__title {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.main__filter__instruments {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+#search__task {
+  width: max-content;
+  outline: none;
+  border: 1px solid var(--color-main-blue);
+  padding: 5px 10px;
+}
+
+#create__task__title {
+  width: 100%;
+  outline: none;
+  border: 1px solid var(--color-main-blue);
+  padding: 5px 10px;
+}
+
+#create__task__description {
+  width: 100%;
+  min-height: 25%;
+  outline: none;
+  border: 1px solid var(--color-main-blue);
+  padding: 5px 10px;
+  
+}
+
+.main__create__task {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  position: absolute;
+  width: 30%;
+  min-height: max-content;
+  max-height: calc(100% - 35%);
+  margin-left: 35%;
+  margin-top: 10%;
+  padding: 20px;
+
+  background-color: #efefef;
+  z-index: 2;
+}
+
+.main__create__back::after {
+  content: '';
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
+}
+
+.create__task__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 10px;
+}
+
+#create__task__description {
+  max-width: 100%;
+  min-width: 100%;
+  max-height: 100%;
+  min-height: 100px;
+  padding: 10px;
+}
+
+.create__task__info__specification {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+#create__task__info__title,
+#create__task__info__priority,
+#create__task__info__date,
+#create__task__info__deadline,
+#create__task__info__author,
+#create__task__info__executor {
+  width: 50%;
+  outline: none;
+  border: 1px solid var(--color-main-blue);
+  padding: 5px 10px;
+}
+
+#create__task__info__priority {
+  padding: 5px 6px;
+}
+
+.main__tasks {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: max-content;
+
+  gap: 10px;
+  padding: 20px;
+
+  font-size: 1.3rem;
+}
+
+.main__tasks__task {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  height: 150px;
+  padding: 10px 15px;
+
+  border: 1px solid var(--color-main-blue);
+  background-color: var(--color-main-blue);
+  border-radius: 10px;
+
+  color: #efefef;
+  font-family: var(--font-victor-light);
+}
+
+.main__tasks__task__title {
+  font-size: 1.1rem;
+  word-wrap: break-word;
+}
+
+.main__tasks__task__description {
+  width: 100%;
+  word-wrap: break-word;
+  font-size: 1rem;
+}
+
+.main__tasks__open,
+.main__tasks__work,
+.main__tasks__close {
+  display: flex;
+  flex-direction: column;
+  min-width: 100%;
+  height: max-content;
+  padding: 10px;
+  border: 1px solid var(--color-main-blue);
+}
+
+.main__tasks__menu,
+.main__tasks__task__info {
+  display: flex;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.main__tasks__task__info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: black;
+  font-size: 1rem;
+}
+
+.main__tasks__task__info__user {
+  width: 100%;
+}
+
+.main__tasks__task__info__instruments {
+  font-size: 1.3rem;
+}
+
+.main__tasks__all {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+/*!*****************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/entry/tasks/tasks.css ***!
+  \*****************************************************************************/
 

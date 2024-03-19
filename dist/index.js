@@ -9,14 +9,14 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/index.html":
-/*!************************!*\
-  !*** ./src/index.html ***!
-  \************************/
+/***/ "./src/entry/main/index.html":
+/*!***********************************!*\
+  !*** ./src/entry/main/index.html ***!
+  \***********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../node_modules/html-loader/dist/runtime/getUrl.js */ \"./node_modules/html-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ./favicons/apple-touch-icon.png */ \"./src/favicons/apple-touch-icon.png\"), __webpack_require__.b);\nvar ___HTML_LOADER_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ./favicons/favicon-32x32.png */ \"./src/favicons/favicon-32x32.png\"), __webpack_require__.b);\nvar ___HTML_LOADER_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ./favicons/favicon-16x16.png */ \"./src/favicons/favicon-16x16.png\"), __webpack_require__.b);\n// Module\nvar ___HTML_LOADER_REPLACEMENT_0___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_0___);\nvar ___HTML_LOADER_REPLACEMENT_1___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_1___);\nvar ___HTML_LOADER_REPLACEMENT_2___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_2___);\nvar code = \"<!DOCTYPE html>\\r\\n<html lang=\\\"ru\\\">\\r\\n<head>\\r\\n  <!-- Basic page needs -->\\r\\n  <meta charset=\\\"UTF-8\\\">\\r\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\r\\n  <meta name=\\\"description\\\" content=\\\"Resume frontend developer\\\">\\r\\n  <title>Резюме</title>\\r\\n\\r\\n  <!-- Site favicons -->\\r\\n  <link rel=\\\"apple-touch-icon\\\" sizes=\\\"180x180\\\" href=\\\"\" + ___HTML_LOADER_REPLACEMENT_0___ + \"\\\">\\r\\n  <link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"32x32\\\" href=\\\"\" + ___HTML_LOADER_REPLACEMENT_1___ + \"\\\">\\r\\n  <link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"16x16\\\" href=\\\"\" + ___HTML_LOADER_REPLACEMENT_2___ + \"\\\">\\r\\n</head>\\r\\n<body>\\r\\n  <div class=\\\"row\\\">\\r\\n    <div class=\\\"about\\\"></div>\\r\\n    <span class=\\\"title\\\">Навыки</span>\\r\\n    <div class=\\\"skills\\\"></div>\\r\\n    <span class=\\\"title\\\">Опыт работы</span>\\r\\n    <div class=\\\"experience\\\"></div>\\r\\n    <span class=\\\"title\\\">Практика</span>\\r\\n    <div class=\\\"practic\\\">\\r\\n      <div class=\\\"practic-left\\\">\\r\\n        <div class=\\\"practic-left-card\\\">\\r\\n          <div class=\\\"card-title\\\">\\r\\n            <span class=\\\"card-title-text\\\">Трекер задач</span>\\r\\n          </div>\\r\\n          <div class=\\\"card-description\\\">\\r\\n            <span class=\\\"card-description-text\\\">Инструмент для управления задачами, предназначен для того, чтобы помочь отдельным лицам и командам эффективно управлять, отслеживать и расставлять приоритеты своих задач.</span>\\r\\n          </div>\\r\\n          <button type=\\\"button\\\" class=\\\"button-card\\\" onclick=\\\"window.location.href='html/tasks.html';\\\">Перейти</button>\\r\\n        </div>\\r\\n        <div class=\\\"practic-left-card\\\">\\r\\n          <div class=\\\"card-title\\\"></div>\\r\\n          <div class=\\\"card-description\\\"></div>\\r\\n        </div>\\r\\n      </div>\\r\\n      <div class=\\\"practic-branch\\\">\\r\\n        <div class=\\\"practic-branch-line\\\"></div>\\r\\n        <div class=\\\"practic-branch-line-point\\\"></div>\\r\\n        <div class=\\\"practic-branch-line-point\\\"></div>\\r\\n        <div class=\\\"practic-branch-line-point\\\"></div>\\r\\n        <div class=\\\"practic-branch-line-point\\\"></div>\\r\\n      </div>\\r\\n      <div class=\\\"practic-right\\\">\\r\\n        <div class=\\\"practic-right-card\\\">\\r\\n          <div class=\\\"card-title\\\"></div>\\r\\n          <div class=\\\"card-description\\\"></div>\\r\\n        </div>\\r\\n        <div class=\\\"practic-right-card\\\">\\r\\n          <div class=\\\"card-title\\\"></div>\\r\\n          <div class=\\\"card-description\\\"></div>\\r\\n        </div>\\r\\n      </div>\\r\\n    </div>\\r\\n    <span class=\\\"title\\\">Контакты</span>\\r\\n    <div class=\\\"contacts\\\"></div>\\r\\n  </div>\\r\\n</body>\\r\\n</html>\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack://resume/./src/index.html?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\n/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../node_modules/html-loader/dist/runtime/getUrl.js */ \"./node_modules/html-loader/dist/runtime/getUrl.js\");\n/* harmony import */ var _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0__);\n// Imports\n\nvar ___HTML_LOADER_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../favicons/apple-touch-icon.png */ \"./src/favicons/apple-touch-icon.png\"), __webpack_require__.b);\nvar ___HTML_LOADER_IMPORT_1___ = new URL(/* asset import */ __webpack_require__(/*! ../../favicons/favicon-32x32.png */ \"./src/favicons/favicon-32x32.png\"), __webpack_require__.b);\nvar ___HTML_LOADER_IMPORT_2___ = new URL(/* asset import */ __webpack_require__(/*! ../../favicons/favicon-16x16.png */ \"./src/favicons/favicon-16x16.png\"), __webpack_require__.b);\n// Module\nvar ___HTML_LOADER_REPLACEMENT_0___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_0___);\nvar ___HTML_LOADER_REPLACEMENT_1___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_1___);\nvar ___HTML_LOADER_REPLACEMENT_2___ = _node_modules_html_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_0___default()(___HTML_LOADER_IMPORT_2___);\nvar code = \"<!DOCTYPE html>\\r\\n<html lang=\\\"ru\\\">\\r\\n<head>\\r\\n  <!-- Basic page needs -->\\r\\n  <meta charset=\\\"UTF-8\\\">\\r\\n  <meta name=\\\"viewport\\\" content=\\\"width=device-width, initial-scale=1.0\\\">\\r\\n  <meta name=\\\"description\\\" content=\\\"Resume frontend developer\\\">\\r\\n  <title>Резюме</title>\\r\\n\\r\\n  <!-- Site favicons -->\\r\\n  <link rel=\\\"apple-touch-icon\\\" sizes=\\\"180x180\\\" href=\\\"\" + ___HTML_LOADER_REPLACEMENT_0___ + \"\\\">\\r\\n  <link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"32x32\\\" href=\\\"\" + ___HTML_LOADER_REPLACEMENT_1___ + \"\\\">\\r\\n  <link rel=\\\"icon\\\" type=\\\"image/png\\\" sizes=\\\"16x16\\\" href=\\\"\" + ___HTML_LOADER_REPLACEMENT_2___ + \"\\\">\\r\\n</head>\\r\\n<body>\\r\\n  <div class=\\\"row\\\">\\r\\n    <div class=\\\"about\\\"></div>\\r\\n    <span class=\\\"title\\\">Навыки</span>\\r\\n    <div class=\\\"skills\\\"></div>\\r\\n    <span class=\\\"title\\\">Опыт работы</span>\\r\\n    <div class=\\\"experience\\\"></div>\\r\\n    <span class=\\\"title\\\">Практика</span>\\r\\n    <div class=\\\"practic\\\">\\r\\n      <div class=\\\"practic__left\\\">\\r\\n        <div class=\\\"practic__left__card\\\">\\r\\n          <div class=\\\"card__title\\\">\\r\\n            <span class=\\\"card__title__text\\\">Трекер задач</span>\\r\\n          </div>\\r\\n          <div class=\\\"card__description\\\">\\r\\n            <span class=\\\"card__description__text\\\">Инструмент для управления задачами, предназначен для того, чтобы помочь отдельным лицам и командам эффективно управлять, отслеживать и расставлять приоритеты своих задач.</span>\\r\\n          </div>\\r\\n          <button type=\\\"button\\\" class=\\\"button\\\" onclick=\\\"window.location.href='tasks.html';\\\">Перейти</button>\\r\\n        </div>\\r\\n        <div class=\\\"practic__left__card\\\">\\r\\n          <div class=\\\"card__title\\\"></div>\\r\\n          <div class=\\\"card__description\\\"></div>\\r\\n        </div>\\r\\n      </div>\\r\\n      <div class=\\\"practic__branch\\\">\\r\\n        <div class=\\\"practic__branch__line\\\"></div>\\r\\n        <div class=\\\"practic__branch__line__point\\\"></div>\\r\\n        <div class=\\\"practic__branch__line__point\\\"></div>\\r\\n        <div class=\\\"practic__branch__line__point\\\"></div>\\r\\n        <div class=\\\"practic__branch__line__point\\\"></div>\\r\\n      </div>\\r\\n      <div class=\\\"practic__right\\\">\\r\\n        <div class=\\\"practic__right__card\\\">\\r\\n          <div class=\\\"card__title\\\"></div>\\r\\n          <div class=\\\"card__description\\\"></div>\\r\\n        </div>\\r\\n        <div class=\\\"practic__right__card\\\">\\r\\n          <div class=\\\"card__title\\\"></div>\\r\\n          <div class=\\\"card__description\\\"></div>\\r\\n        </div>\\r\\n      </div>\\r\\n    </div>\\r\\n    <span class=\\\"title\\\">Контакты</span>\\r\\n    <div class=\\\"contacts\\\"></div>\\r\\n  </div>\\r\\n</body>\\r\\n</html>\";\n// Exports\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (code);\n\n//# sourceURL=webpack://resume/./src/entry/main/index.html?");
 
 /***/ }),
 
@@ -31,45 +31,35 @@ eval("\n\nmodule.exports = function (url, options) {\n  if (!options) {\n    // 
 
 /***/ }),
 
-/***/ "./src/index.css":
-/*!***********************!*\
-  !*** ./src/index.css ***!
-  \***********************/
+/***/ "./src/entry/main/index.css":
+/*!**********************************!*\
+  !*** ./src/entry/main/index.css ***!
+  \**********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://resume/./src/index.css?");
+eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://resume/./src/entry/main/index.css?");
 
 /***/ }),
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
+/***/ "./src/entry/main/index.js":
+/*!*********************************!*\
+  !*** ./src/entry/main/index.js ***!
+  \*********************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ \"./src/index.html\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ \"./src/index.css\");\n/* harmony import */ var _js_app__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./js/app */ \"./src/js/app.js\");\n/* harmony import */ var _js_app__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_app__WEBPACK_IMPORTED_MODULE_2__);\n/* harmony import */ var _js_tasks__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./js/tasks */ \"./src/js/tasks.js\");\n/* harmony import */ var _js_tasks__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_js_tasks__WEBPACK_IMPORTED_MODULE_3__);\n\r\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://resume/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _index_html__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./index.html */ \"./src/entry/main/index.html\");\n/* harmony import */ var _index_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./index.css */ \"./src/entry/main/index.css\");\n/* harmony import */ var _js_index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../js/index */ \"./src/js/index.js\");\n/* harmony import */ var _js_index__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_js_index__WEBPACK_IMPORTED_MODULE_2__);\n\r\n\r\n\r\n\n\n//# sourceURL=webpack://resume/./src/entry/main/index.js?");
 
 /***/ }),
 
-/***/ "./src/js/app.js":
-/*!***********************!*\
-  !*** ./src/js/app.js ***!
-  \***********************/
-/***/ (() => {
-
-eval("\n\n//# sourceURL=webpack://resume/./src/js/app.js?");
-
-/***/ }),
-
-/***/ "./src/js/tasks.js":
+/***/ "./src/js/index.js":
 /*!*************************!*\
-  !*** ./src/js/tasks.js ***!
+  !*** ./src/js/index.js ***!
   \*************************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack://resume/./src/js/tasks.js?");
+eval("\n\n//# sourceURL=webpack://resume/./src/js/index.js?");
 
 /***/ }),
 
@@ -219,7 +209,7 @@ eval("module.exports = __webpack_require__.p + \"4ffeb1bfbe5df6b8619c.png\";\n\n
 /******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
 /******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
 /******/ 		var installedChunks = {
-/******/ 			"main": 0
+/******/ 			"index": 0
 /******/ 		};
 /******/ 		
 /******/ 		// no chunk on demand loading
@@ -242,7 +232,7 @@ eval("module.exports = __webpack_require__.p + \"4ffeb1bfbe5df6b8619c.png\";\n\n
 /******/ 	// startup
 /******/ 	// Load entry module and return exports
 /******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/index.js");
+/******/ 	var __webpack_exports__ = __webpack_require__("./src/entry/main/index.js");
 /******/ 	
 /******/ })()
 ;
