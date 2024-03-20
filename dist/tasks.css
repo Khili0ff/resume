@@ -409,6 +409,7 @@ template {
   cursor: pointer;
 
   font-family: var(--font-victor-light);
+  font-size: 1.1rem;
   color: #fff;
 }
 
@@ -489,7 +490,9 @@ html, body {
 .navigation__menu__task,
 .navigation__menu__board,
 .main__filter__instruments__sort,
-.main__filter__instruments__filters {
+.main__filter__instruments__filters,
+.main__tasks__task,
+#closed__create {
   cursor: pointer;
 }
 
@@ -511,6 +514,7 @@ html, body {
 .main__filter {
   display: flex;
   justify-content: space-between;
+  gap: 30px;
   align-items: end;
   padding: 20px;
 }
@@ -518,6 +522,7 @@ html, body {
 .main__filter__title {
   font-size: 1.5rem;
   font-weight: 500;
+  margin-bottom: 5px;
 }
 
 .main__filter__instruments {
@@ -533,26 +538,10 @@ html, body {
   padding: 5px 10px;
 }
 
-#create__task__title {
-  width: 100%;
-  outline: none;
-  border: 1px solid var(--color-main-blue);
-  padding: 5px 10px;
-}
-
-#create__task__description {
-  width: 100%;
-  min-height: 25%;
-  outline: none;
-  border: 1px solid var(--color-main-blue);
-  padding: 5px 10px;
-  
-}
-
 .main__create__task {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 10px;
 
   position: absolute;
   width: 30%;
@@ -560,7 +549,7 @@ html, body {
   max-height: calc(100% - 35%);
   margin-left: 35%;
   margin-top: 10%;
-  padding: 20px;
+  padding: 10px 20px 20px 20px;
 
   background-color: #efefef;
   z-index: 2;
@@ -575,6 +564,29 @@ html, body {
   position: absolute;
   background-color: rgba(0, 0, 0, 0.3);
   z-index: 1;
+}
+
+.closed__create__task {
+  display: flex;
+  justify-content: end;
+  font-size: 2rem;
+  color: var(--color-main-blue);
+  font-weight: 700;
+}
+
+#create__task__title {
+  width: 100%;
+  outline: none;
+  border: 1px solid var(--color-main-blue);
+  padding: 5px 10px;
+}
+
+#create__task__description {
+  width: 100%;
+  min-height: 25%;
+  outline: none;
+  border: 1px solid var(--color-main-blue);
+  padding: 5px 10px;
 }
 
 .create__task__info {
@@ -628,6 +640,7 @@ html, body {
 }
 
 .main__tasks__task {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -652,6 +665,13 @@ html, body {
   width: 100%;
   word-wrap: break-word;
   font-size: 1rem;
+}
+
+.main__tasks__task__date {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  font-size: 0.9rem;
 }
 
 .main__tasks__open,
@@ -686,6 +706,7 @@ html, body {
 
 .main__tasks__task__info__instruments {
   font-size: 1.3rem;
+  color: #efefef;
 }
 
 .main__tasks__all {

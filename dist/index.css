@@ -409,6 +409,7 @@ template {
   cursor: pointer;
 
   font-family: var(--font-victor-light);
+  font-size: 1.1rem;
   color: #fff;
 }
 
@@ -522,13 +523,13 @@ body {
 .card__title__text {
   margin: auto 15px;
 
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: #fff;
 }
 
 .card__description {
   display: flex;
-  
+  font-size: 1.1rem;
   padding: 15px;
 }
 
