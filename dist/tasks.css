@@ -522,7 +522,7 @@ html, body {
 
 .main__filter__title {
   font-size: 1.5rem;
-  font-weight: 500;
+  font-family: var(--font-victor-bold);
   margin-bottom: 5px;
 }
 
@@ -719,57 +719,59 @@ html, body {
 }
 
 .main__task__detailed__container {
-  height: 100%;
   position: absolute;
   top: 0;
   right: 0;
+  height: 100%;
+  box-sizing: content-box;
   background-color: #efefef;
 }
 
 .show__detailed {
-  width: 35%;
-  animation: appearance 1s ease 0s 1 normal none;
+  animation: appearance 500ms ease 0s 1 normal none;
 }
 
 @keyframes appearance {
   0% {
+    width: 0;
     border-left: 1px solid var(--color-main-blue);
-    width: 0%;
   }
   100% {
     border-left: 8px solid var(--color-main-blue);
-    width: 35%;
+    width: 450px;
   }
 }
 
 .remove__detailed {
-  width: 0%;
-  animation: disappearance 1s ease 0s 1 normal none;
+  animation: disappearance 500ms ease 0s 1 normal none;
 }
 
 @keyframes disappearance {
   0% {
     border-left: 8px solid var(--color-main-blue);
-    width: 35%;
+    width: 450px;
   }
   100% {
     border-left: 1px solid var(--color-main-blue);
-    width: 0%;
+    width: 0;
   }
 }
 
 .main__task__detailed {
+  position: relative;
   display: grid;
-  grid-template-rows: 40px 100px 1fr 100px;
-  width: 100%;
+  grid-template-rows: 40px max-content max-content 100px;
+  max-width: 450px;
+  min-width: 450px;
   height: 100%;
 
-  padding: 10px 20px;
+  padding: 10px 30px;
   font-size: 1rem;
 }
 
 .main__task__detailed__name {
   font-size: 1.1rem;
+  font-family: var(--font-victor-bold);
 }
 
 .main__task__detailed__menu {
@@ -780,12 +782,14 @@ html, body {
   padding-bottom: 10px;
 }
 
-.main__task__detailed__menu:after {
+.main__task__detailed__menu:after,
+.main__tasks__detailed__info__basic::after,
+.main__tasks__detailed__info__all::after {
   content: '';
   position: absolute;
   bottom: 0;
-  left: -15px;
-  width: calc(100% + 40px);
+  left: -25px;
+  width: calc(100% + 45px);
   height: 1px;
   background-color: var(--color-main-blue);
 }
@@ -800,12 +804,39 @@ html, body {
   font-size: 2rem;
 }
 
+.main__tasks__detailed__info__basic {
+  position: relative;
+  height: max-content;
+  display: flex;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.main__tasks__detailed__info__timer {
+  margin-bottom: 10px;
+}
+
+.main__tasks__detailed__info__block {
+  margin-bottom: 20px;
+}
+
+.main__tasks__detailed__info__block__title {
+  font-size: 1.2rem;
+}
+
+.main__tasks__detailed__info__block__description {
+  word-break: break-word;
+}
+
+
 .main__tasks__detailed__info__all {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 20px;
   margin-left: 0;
   padding-left: 0;
+  padding: 10px 0;
 }
 
 .main__tasks__detailed__info__all li {
