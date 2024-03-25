@@ -589,11 +589,18 @@ html, body {
   background-image: url(3534cac15fecca510904.svg);
 }
 
-.sort__ascending {
+.sort__meaning {
+  width: 18px;
+  height: 18px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.ascending {
   background-image: url(2bac11bc844d2cd774d4.svg);
 }
 
-.sort__descending {
+.descending {
   background-image: url(e5a1fc7b0aa93e17dff7.svg);
 }
 
