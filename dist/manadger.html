@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <!-- Basic page needs -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Resume frontend developer">
+  <title>Резюме - Менеджер файлов</title>
+
+  <!-- Site favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="e473fdac636d48acba1c.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="4ffeb1bfbe5df6b8619c.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="e5ae6c077c9a95ec6253.png">
+<script defer src="manadger.js"></script><link href="manadger.css" rel="stylesheet"></head>
+<body>
+  <div class="row">
+    <navigation class="navigation">
+      <div class="navigation__appellation">
+        <span class="navigation__appellation__title">Менеджер файлов</span>
+        <a class="navigation__menu__style__link" href="index.html">Все сервисы</a>
+      </div>
+      <div class="navigation__menu">
+        <a class="navigation__menu__style__link" href="#">Все файлы</a>
+        <a class="navigation__menu__style__link" href="#">Фото</a>
+        <a class="navigation__menu__style__link" href="#">Избранные</a>
+        <a class="navigation__menu__style__link" href="#">Удаленные файлы</a>
+        <button class="button" id="upload__file" type="button">Загрузить файл</button>
+      </div>
+      <div class="navigation__contacts">
+
+      </div>
+    </navigation>
+    <main class="main">
+      <div class="main__navigation">
+
+      </div>
+      <div class="main__filter">
+        <h1 class="main__filter__title" title="Новая задача">Новая доска</h1>
+        <div class="main__filter__instruments">
+          <input type="search" placeholder="Поиск файла" id="search__file">
+          <div class="main__filter__instruments__sort"><div class="main__filter__instruments__sort__meaning"></div><div class="instruments__sort"><span id="sort__title">Сортировка</span></div></div>
+          <div class="main__filter__instruments__filters"><span id="instruments__filter">Фильтры</span></div>
+        </div>
+      </div>
+      <div class="main__tasks"></div>
+      <div class="main__task__detailed__container"></div>
+    </main>
+  </div>
+</body>
+</html>

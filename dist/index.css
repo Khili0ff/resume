@@ -405,6 +405,7 @@ template {
   padding: 10px 10px;
   border-radius: 0px;
   border: none;
+  outline: none;
 
   background: var(--color-main-blue);
   cursor: pointer;
@@ -516,7 +517,7 @@ body {
   display: flex;
 
   position: relative;
-  height: 30%;
+  height: 50px;
 
   background-color: var(--color-main-blue);
 }
@@ -555,7 +556,8 @@ body {
 }
 
 .card__description {
-  height: 70%;
+  height: max-content;
+  margin-bottom: 20px;
 }
 
 
