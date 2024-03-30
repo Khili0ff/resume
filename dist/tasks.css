@@ -356,19 +356,19 @@ template {
 
 @font-face {
   font-family: VictorMono-Light;
-  src: url(75f9e4f5b2954965c452.ttf);
+  src: url(VictorMono-Light.ttf) format('truetype');
   font-weight: lighter;
 }
 
 @font-face {
   font-family: VictorMono-Regular;
-  src: url(6e890dddb898bf189466.ttf);
+  src: url(VictorMono-Regular.ttf) format('truetype');
   font-weight: regular;
 }
 
 @font-face {
   font-family: VictorMono-Bold;
-  src: url(d753345ce95c3a8e6f62.ttf);
+  src: url(VictorMono-Bold.ttf) format('truetype');
   font-weight: bold;
 }
 
@@ -587,7 +587,7 @@ html, body {
   height: 18px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(3534cac15fecca510904.svg);
+  background-image: url(sort.svg);
 }
 
 .sort__meaning {
@@ -598,11 +598,11 @@ html, body {
 }
 
 .ascending {
-  background-image: url(2bac11bc844d2cd774d4.svg);
+  background-image: url(sort__ascending.svg);
 }
 
 .descending {
-  background-image: url(e5a1fc7b0aa93e17dff7.svg);
+  background-image: url(sort__descending.svg);
 }
 
 #search__task {
@@ -775,11 +775,11 @@ html, body {
   height: 16px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(a2d110f626960191a508.svg);
+  background-image: url(paper__pin.svg);
 }
 
 .task__cliped {
-  background-image: url(665440daa8227b85dbb4.svg);
+  background-image: url(paper__pined.svg);
 }
 
 .main__tasks__all {
@@ -876,11 +876,11 @@ html, body {
   height: 20px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url(dc489673a255676285ed.svg);
+  background-image: url(favourites__add.svg);
 }
 
 .favourites__added {
-  background-image: url(78e57cf5caa4fad9e538.svg);
+  background-image: url(favourites__added.svg);
 }
 
 .main__task__detailed__menu__liked__add {
@@ -888,11 +888,11 @@ html, body {
   height: 20px;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(e3943ff65321aa122963.svg);
+  background-image: url(like.svg);
 }
 
 .liked__added {
-  background-image: url(d01e86049ba166c4963b.svg);
+  background-image: url(liked.svg);
 }
 
 #closed__detailed {

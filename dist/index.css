@@ -356,19 +356,19 @@ template {
 
 @font-face {
   font-family: VictorMono-Light;
-  src: url(75f9e4f5b2954965c452.ttf);
+  src: url(VictorMono-Light.ttf) format('truetype');
   font-weight: lighter;
 }
 
 @font-face {
   font-family: VictorMono-Regular;
-  src: url(6e890dddb898bf189466.ttf);
+  src: url(VictorMono-Regular.ttf) format('truetype');
   font-weight: regular;
 }
 
 @font-face {
   font-family: VictorMono-Bold;
-  src: url(d753345ce95c3a8e6f62.ttf);
+  src: url(VictorMono-Bold.ttf) format('truetype');
   font-weight: bold;
 }
 
@@ -502,10 +502,12 @@ body {
   transition: all 100ms;
 }
 
-.practic__left__card {
+.practic__left__card,
+.practic__right__card {
   position: relative;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   margin-top: 5px;
 }
 

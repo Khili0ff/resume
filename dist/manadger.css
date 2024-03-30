@@ -356,19 +356,19 @@ template {
 
 @font-face {
   font-family: VictorMono-Light;
-  src: url(75f9e4f5b2954965c452.ttf);
+  src: url(VictorMono-Light.ttf) format('truetype');
   font-weight: lighter;
 }
 
 @font-face {
   font-family: VictorMono-Regular;
-  src: url(6e890dddb898bf189466.ttf);
+  src: url(VictorMono-Regular.ttf) format('truetype');
   font-weight: regular;
 }
 
 @font-face {
   font-family: VictorMono-Bold;
-  src: url(d753345ce95c3a8e6f62.ttf);
+  src: url(VictorMono-Bold.ttf) format('truetype');
   font-weight: bold;
 }
 
@@ -491,7 +491,7 @@ html, body {
 
 .main__files {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-content: flex-start;
   flex-wrap: wrap;
   gap: 30px;
@@ -503,7 +503,7 @@ html, body {
   align-items: center;
   justify-content: center;
   position: relative;
-  width: 250px;
+  width: 100%;
   height: 200px;
   background-color: var(--color-hover-blue);
   outline: 1px solid #fefefe;
@@ -513,27 +513,84 @@ html, body {
 }
 
 .main__files__file__info {
-  width: 250px;
+  width: 300px;
   height: max-content;
   display: flex;
   flex-direction: column;
 }
 
+.main__files__file__card:hover {
+  padding-top: 20px;
+  transform: scale(1.05);
+}
+
+#remove__file {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 5px 10px 0 0;
+  font-size: 1.8rem;
+  color: #efefef;
+}
+
 .main__files__file__card__image {
   position: absolute;
-  width: 80%;
-  height: 80%;
+  width: 250px;
+  height: 150px;
   object-fit: cover;
+}
+
+.card__file__image {
+  background-position: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url(document.svg);
 }
 
 .main__files__file__card__title {
   width: 100%;
-  max-height: 70px;
+  height: 20px;
   font-size: 1.1rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   margin-bottom: 5px;
+}
+
+#link__for__saving {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+@keyframes head__shake {
+  0% {
+    transform: translateX(0)
+  }
+  12.5% {
+    transform: translateX(-6px) rotateY(-9deg) skewY(1deg)
+  }
+  37.5% {
+    transform: translateX(5px) rotateY(4.5deg) skewY(-1deg)
+  }
+  62.5% {
+    transform: translateX(-3px) rotateY(-2.25deg) skewY(0)
+  }
+  87.5% {
+    transform: translateX(2px) rotateY(3deg) 
+  }
+  100% {
+    transform: translateX(0)
+  }
+}
+
+.head__shake {
+  animation-duration: .5s;
+  animation-timing-function: cubic-bezier(0,.23,1,.71);
+  animation-name: head__shake;
+  transform-origin: center bottom;
 }
 
 .main__files__file__card__title::first-letter,
@@ -547,7 +604,8 @@ html, body {
 #add__favourites,
 #closed__upload,
 .upload__file__label,
-.upload__delayed__date__label {
+.upload__delayed__date__label,
+#remove__file {
   cursor: pointer;
 }
 

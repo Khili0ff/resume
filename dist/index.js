@@ -70,7 +70,7 @@ eval("\n\n//# sourceURL=webpack://resume/./src/js/index.js?");
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = __webpack_require__.p + \"e473fdac636d48acba1c.png\";\n\n//# sourceURL=webpack://resume/./src/favicons/apple-touch-icon.png?");
+eval("module.exports = __webpack_require__.p + \"apple-touch-icon.png\";\n\n//# sourceURL=webpack://resume/./src/favicons/apple-touch-icon.png?");
 
 /***/ }),
 
@@ -81,7 +81,7 @@ eval("module.exports = __webpack_require__.p + \"e473fdac636d48acba1c.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = __webpack_require__.p + \"e5ae6c077c9a95ec6253.png\";\n\n//# sourceURL=webpack://resume/./src/favicons/favicon-16x16.png?");
+eval("module.exports = __webpack_require__.p + \"favicon-16x16.png\";\n\n//# sourceURL=webpack://resume/./src/favicons/favicon-16x16.png?");
 
 /***/ }),
 
@@ -92,7 +92,7 @@ eval("module.exports = __webpack_require__.p + \"e5ae6c077c9a95ec6253.png\";\n\n
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = __webpack_require__.p + \"4ffeb1bfbe5df6b8619c.png\";\n\n//# sourceURL=webpack://resume/./src/favicons/favicon-32x32.png?");
+eval("module.exports = __webpack_require__.p + \"favicon-32x32.png\";\n\n//# sourceURL=webpack://resume/./src/favicons/favicon-32x32.png?");
 
 /***/ })
 
