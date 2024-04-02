@@ -531,7 +531,6 @@ html, body {
 }
 
 .payment {
-  min-width: max-content;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -539,10 +538,7 @@ html, body {
 }
 
 .payment__cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  justify-content: center;
-  justify-content: flex-start;
+  display: flex;
 }
 
 .payment__cards__card {
@@ -555,15 +551,17 @@ html, body {
 }
 
 .payment__form {
-  width: 100%;
-  height: 40px;
-  display: flex;
+  width: calc(100% - 15px);
+  height: max-content;
+  display: grid;
+  grid-template-columns: 60% 40%;
   justify-content: space-between;
   gap: 15px;
 }
 
 .payment__form__input {
-  min-width: 60%;
+  width: 100%;
+  height: 40px;
   appearance: none; 
   outline: none;  
   border-radius: 0;
@@ -572,7 +570,8 @@ html, body {
 }
 
 .button {
-  max-width: 40%;
+  width: 100%;
+  height: 40px;
   padding: 0;
 }
 
@@ -601,3 +600,14 @@ html, body {
 #card__american {
   background-image: url(payment__american.svg);
 }
+
+.payment__form__safety {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.form__safety {
+  grid-template-columns: 100%;
+}
+
