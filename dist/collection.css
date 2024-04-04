@@ -569,6 +569,27 @@ html, body {
   padding: 0 10px;
 }
 
+.payment__form__warning {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 30px;
+  padding: 10px;
+  border: 1px solid red;
+}
+
+.payment__form__warning::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -10px;
+  border-width: 0 10px 10px 10px;
+  border-color: transparent transparent red transparent;
+  border-style: solid;
+}
+
 .button {
   width: 100%;
   height: 40px;
